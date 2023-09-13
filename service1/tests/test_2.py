@@ -4,8 +4,8 @@ import os
 
 
 def test_invalid():
-    entrypoint_path = os.path.join('..', 'entrypoint.py')
-    process = subprocess.Popen(["python2", entrypoint_path], 
+    entrypoint_path = os.path.join('service1', 'entrypoint.py')
+    process = subprocess.Popen(["python", entrypoint_path], 
                                 stdout=subprocess.PIPE,
                                 stderr=subprocess.PIPE,
                                 stdin=subprocess.PIPE,
